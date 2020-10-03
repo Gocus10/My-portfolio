@@ -18,7 +18,7 @@ header {
 header h1{
   background-color: #a0cede;
   padding: 0 10px 0 50px;
-  font-size: 48px;
+  font-size: 3rem;
   color: #213545;
 }
 header a {
@@ -39,7 +39,7 @@ header nav ul li a {
     padding: 10px 15px;
     margin: 10px;
     font-weight: lighter;
-    font-size: 24px;
+    font-size: 1.5rem;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     border-bottom: 3px solid #a0cede;
   
@@ -58,7 +58,7 @@ section{
   padding: 150px;
 }
 .jumbotron h3{
-  font-size: 36px;
+  font-size: 2rem;
   background-color: #a0cede;
   position:relative;
   bottom: -120px;
@@ -67,7 +67,7 @@ section{
 .section-title{
   display: flex;
   justify-content: flex-end;
-  font-size: 32px;
+  font-size: 2rem;
   color: #024e76;  
   border-right: 3px solid;
   text-align: right;
@@ -83,6 +83,7 @@ section{
 .about-me-paragraph{
   width: 70%;
   line-height: 1.5;
+  font-size: 1.2rem;
 }
 #work{
   display: flex;
@@ -92,18 +93,61 @@ section{
 .wrapper {
   width: 70%;
   display: grid;
+  justify-content: flex-start;
   grid-gap: 10px;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  background-color: #fff;
-  color: #444;
+  grid-template-rows: repeat(3, 200px);
+}
+.grid-title{
+  position: absolute;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: #a0cede;
+}
+.wrapper h3{
+  font-size: 2rem;
+}
+.wrapper h4{
+  font-size: 1.3rem;
+  font-weight: lighter;
+}
+.run-buddy{
+  background-image: url(../images/run-buddy.png);
+  width: 100%;
+  background-size: cover;
+  position: relative;
+}
+.project-two{
+  background-image: url(https://picsum.photos/200);
+  width: 100%;
+  background-size: cover;
+  position: relative;
+}
+.project-three{
+  background-image: url(https://picsum.photos/200);
+  width: 100%;
+  background-size: cover;
+  position: relative;
+}
+.project-four{
+  background-image: url(https://picsum.photos/200);
+  width: 100%;
+  background-size: cover;
+  position: relative;
+}
+.project-five{
+  background-image: url(https://picsum.photos/200);
+  width: 100%;
+  background-size: cover;
+  position: relative;
 }
 .box {
-  background-color: #444;
-  color: #fff;
-  border-radius: 5px;
-  padding: 20px;
-  font-size: 150%;
+  padding: 10px 0; 
+  border: 5px solid #a0cede;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  text-align: left;
 }
 .run-buddy{
   grid-row: 1 / span 2;
@@ -131,4 +175,20 @@ section{
   font-size: 20px;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   border-bottom: 3px solid #024e76;
+}
+.box::after{
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-color: #a0cede;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: .3;
+  transition-duration: 0.5s;
+}
+.box:hover:after{
+  background-color:#e2e39d;
+  opacity: .3;
+
 }
