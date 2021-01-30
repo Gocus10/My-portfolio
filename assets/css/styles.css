@@ -125,19 +125,19 @@ section{
   position: relative;
 }
 .project-three{
-  background-image: url(../images/run-buddy.png);
+  background-image: url(../images/techblog.png);
   width: 100%;
   background-size: cover;
   position: relative;
 }
 .project-four{
-  background-image: url(https://picsum.photos/200);
+  background-image: url(../images/run-buddy.png);
   width: 100%;
   background-size: cover;
   position: relative;
 }
 .project-five{
-  background-image: url(https://picsum.photos/200);
+  background-image: url(../images/notetaker.png);
   width: 100%;
   background-size: cover;
   position: relative;
